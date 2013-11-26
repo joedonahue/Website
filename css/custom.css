@@ -1,21 +1,42 @@
 body{
-	background-image:url('../images/brickwall_@2X.png');
-	background-repeat: repeat;
-	background-attachment: fixed;
 	font-size: 100%;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
 
-#container{
-	/* Fallback for web browsers that don't support RGBa */
-	    background-color: rgb(253, 253, 253);
-	    /* RGBa with 0.6 opacity */
-	    background-color: rgba(253, 253, 253, 0.4);
-	width: 960px;
-	margin: 0 auto 0 auto;
+#intro { 
+    background: url('../images/brickwall_@2X.png') repeat fixed; 
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+#home { 
+    background: url('../images/IMG_0593.JPG') no-repeat fixed; 
+	background-size: 100%;
+    height: auto;  
+    margin: 0 auto; 
+    width: auto; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 200px 0;
+}
+#about { 
+    background: url('../images/squares_@2X.png') 50% 0 repeat fixed; 
+    height: auto;
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+    color: #fff;
 }
 
-.nav nav-pills{
-	float:right;
+div{
+	/* Fallback for web browsers that don't support RGBa */
+	background-color: rgb(253, 253, 253);
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(253, 253, 253, 0.4);
 }

@@ -4,7 +4,7 @@ body{
 	-moz-box-sizing: border-box;
 }
 
-#intro { 
+#top { 
     background: url('../images/brickwall_@2X.png') repeat fixed; 
     height: auto;  
     margin: 0 auto; 
@@ -13,7 +13,7 @@ body{
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 100px 0;
 }
-#home { 
+#section2 { 
     background: url('../images/IMG_0593.JPG') no-repeat fixed; 
 	background-size: 100%;
     height: auto;  
@@ -23,7 +23,7 @@ body{
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 200px 0;
 }
-#about { 
+#section3 { 
     background: url('../images/squares_@2X.png') 50% 0 repeat fixed; 
     height: auto;
     margin: 0 auto; 
@@ -31,7 +31,6 @@ body{
     position: relative; 
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 100px 0;
-    color: #fff;
 }
 
 div{
@@ -40,3 +39,4 @@ div{
 	/* RGBa with 0.6 opacity */
 	background-color: rgba(253, 253, 253, 0.4);
 }
+

@@ -7,6 +7,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
 	
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -17,17 +18,17 @@
     <![endif]-->
   </head>
   <body>
-	  <nav class="navbar-fixed-top navbar-inverse" role="navigation">
+	  <nav class="navbar-fixed-top" role="navigation">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	    </div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="#top">Home</a></li><!--link to Section 1-->
-		      <li><a href="#section2">Resume</a></li>
-			  <li><a href="#section3">Links</a>
-		      <li><a href="#section4">Contact</a></li>
+		      <li ng-class="{ active: isActive('') }"><a href="#top">Home</a></li><!--link to Section 1-->
+		      <li ng-class="{ active: isActive('#section2') }"><a href="#section2">Resume</a></li>
+			  <li ng-class="{ active: isActive('#section3') }"><a href="#section3">Links</a>
+		      <li ng-class="{ active: isActive('#section4') }"><a href="#section4">Contact</a></li>
 		    </ul>
 		  </div><!-- /.navbar-collapse -->
 		</nav>
@@ -35,24 +36,80 @@
 	  <section id="top" data-speed="6" data-type="background">
 	      <div class="container">
 	          <h1>Joe Donahue</h1>
+			  
+			  <p>I am a student at Saint Joseph's University in Philadelphia, Pennsylvania.  I am studying communications.</p>
+			  <p>I am originally from Bucks County, PA.</p>
+			  <p>I am an Eagle Scout.</p>
+			  <p>I am, most importantly, me.</p>
 	      </div>
 	  </section>
 	  <!-- Section 2 -->
 	  <section id="section2" data-speed="4" data-type="background">
 	      <div class="container">
-	          More content goes here!
+	          <h2>Resume</h2>
+			  <h3>Education</h3>
+			  <dl>
+				  <dt>Saint Joseph's University, Philadelphia PA</dt>
+					  <dd>Major: Communication Studies</dd>
+					  <dd>Minor: Faith Justice Studies</dd>
+					  <dd>Anticipated Graduation: May 2015</dd>
+					  
+			  </dl>
+			  <h3>Work Experience</h3>
+			  <dl>
+				  <dt>Student Employee, Computer Services, Saint Joseph's University (2011-present)</dt>
+				  <dd>Assist with the maintenance of computer labs and classrooms.</dd>
+				  <dd>Assist with the preparation of computers for deployment in the University.</dd>
+				  <dt>Summer Employee, Registrar's Office, Saint Joseph's University (2009-2010)</dt>
+				  <dd>Assist with the transition to electronic records.</dd>
+				  <dd>Assist with office tasks as needed.</dd>
+			  </dl>
+			  <h3>Non-work Experience</h3>
+			  <dl>
+				  <dt>Lodge Chief, <a href="http://www.ajapeu33.org">Ajapeu Lodge 33</a>, Bucks County Council, B.S.A. (July 2013-present)</dt>
+				  <dd>Serve as the top youth leader of the Order of the Arrow in the Bucks County Council</dd>
+				  <dd>Oversee all operations &amp; finances of the lodge in tandem with the Lodge Adviser &amp; Lodge Staff Adviser</dd>
+<dd>Represent the Order of the Arrow on the Council Camping Committee</dd>
+<dd>Serve as a youth representative to, and voting member of, the Executive Board (Board of Directors) of the Bucks County Council, B.S.A.</dd>
+<dt>Member, Saint Joseph's University Academic Honesty Board (2012-present)
+	<dd>Evaluate cases of plagiarism, cheating, and other alleged violations of the Academic Honesty Policy as appealed to the board.</dd>
+	<dt>Staff, National Order of the Arrow Communications &amp; Technology Sub-Committee (2011-present)</dt>
+	<dd>Serve as a writer for the Local Features Content Team</dd>
+	<dd>Generate content for the Order of the Arrow and the Order of the Arrow National Bulletin</dd>
+<dd>Lead author of the Order of the Arrow Local Media Guide (Anticipated Publication 2014)</dd>
+<dt>Member, Saint Joseph's University Chapel Choir (2011-present)</dt>
+<dt>Member, Tony Melendez Concert Planning Committee (Jan 12 - Mar 12)</dt>
+</dl>
 	      </div>
 	  </section>
 	  <!-- Section 3 -->
 	  <section id="section3" data-speed="2" data-type="background">
 	      <div class="container">
-	          This is the final section!
+	          <h2>Links</h2>
+			  <p>The below are some links that I find interesting and you may find interesting too.</p>
+			  <ul>
+				  <li><a href="http://www.sjucom.net">The SJU Communication Studies website</a></li>
+				  <li><a href="http://www.sjuhawks.com">The SJU Athletics Website</a>, where you can get tickets to games, etc.</li>
+				  <li><a href="http://waitwait.npr.org"><i>Wait, Wait, Don't Tell Me...</i></a> is a podcast from NPR.  It is the only NPR show I listen to on a regular basis.</li>
+			  </ul>
 	      </div>
 	  </section>
 	  <!-- Section 4 -->
 	  <section id="section4" data-speed="2" data-type="background">
 	      <div class="container">
-	          This is the final section!
+			  <h2>Contact</h2>
+			  <p>I can be reached by sending an email to jdonahue [at] sju [dot] edu, or by filling out the contact form below:</p>
+			  <form action="MAILTO:jdonahue@sju.edu" method="post" enctype="text/plain">
+			  Name:<br>
+			  <input type="text" name="name" value="your name"><br>
+			  E-mail:<br>
+			  <input type="text" name="mail" value="your email"><br>
+			  Comment:<br>
+			  <input type="text" name="comment" value="your comment"  rows="4" size="50"><br><br>
+			  <input type="submit" value="Send">
+			  <input type="reset" value="Reset">
+			  </form>
+			  
 	      </div>
 	  </section>
 	

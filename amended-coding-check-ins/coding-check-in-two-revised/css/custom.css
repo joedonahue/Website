@@ -1,6 +1,6 @@
-.container{
-position:relative;
-width: 960px;
+#container{
+width:80%;
+margin: 0 auto 0 auto;
 }
 
 img {
